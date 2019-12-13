@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 if (emailEditText.getText().toString().isEmpty())
                 {
-                   // Toast.makeText(this,"empty", LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "You clicked on " , Toast.LENGTH_SHORT).show();
                 }
                 final String email = emailEditText.getText().toString();
 
