@@ -42,19 +42,11 @@ public class RegisterActivity extends AppCompatActivity {
 
                 final String name = emailEditText.getText().toString();
 
-                if (emailEditText.getText().toString().isEmpty())
+                if (emailEditText.getText().toString().isEmpty() || nameEditText.getText().toString().isEmpty() || phoneEditText.getText().toString().isEmpty() )
                 {
-                    Toast.makeText(RegisterActivity.this, "You clicked on " , Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "You Should fill All the fields! " , Toast.LENGTH_SHORT).show();
                 }
-                final String email = emailEditText.getText().toString();
 
-                    if (email == "") {
-                    Toast t = makeText(getApplicationContext(),
-                            "This a positioned toast message",
-                            LENGTH_LONG);
-                    t.setGravity(Gravity.BOTTOM | Gravity.LEFT, 0, 0);
-                    t.show();
-                }
 
                     else {
 
