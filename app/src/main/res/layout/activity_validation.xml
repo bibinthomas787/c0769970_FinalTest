@@ -37,14 +37,30 @@
         android:id="@+id/button5"
         android:layout_width="165dp"
         android:layout_height="38dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="32dp"
         android:background="#FD00967F"
         android:text="Verify"
         android:textColorHint="#00F1EEEE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="44dp"
+        android:text="I'm Not Robot"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridView"
+        app:layout_constraintVertical_bias="0.787" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
