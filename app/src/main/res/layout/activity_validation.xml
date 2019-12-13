@@ -17,8 +17,10 @@
         android:numColumns="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
 
     <TextView
         android:id="@+id/textView2"
@@ -32,15 +34,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="172dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="1139dp"
-        android:layout_marginLeft="1139dp"
-        android:layout_marginTop="28dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridView" />
+        android:id="@+id/button5"
+        android:layout_width="165dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginBottom="40dp"
+        android:background="#FD00967F"
+        android:text="Verify"
+        android:textColorHint="#00F1EEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
