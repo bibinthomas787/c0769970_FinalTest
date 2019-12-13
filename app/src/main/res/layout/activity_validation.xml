@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="2"
+    android:columnCount="3"
     android:rowCount="8"
     android:orientation="horizontal"
     tools:context=".ValidationActivity">
@@ -15,7 +15,8 @@
         android:layout_margin="2dp"
         android:layout_rowWeight="1"
         app:srcCompat="@drawable/img1"
-        android:layout_height="80dp"
+        android:layout_height="120dp"
+        android:layout_width="100dp"
         />
 
     <ImageView
@@ -24,6 +25,8 @@
         android:layout_margin="2dp"
         android:layout_rowWeight="1"
         app:srcCompat="@drawable/img2"
+        android:layout_height="120dp"
+        android:layout_width="100dp"
         />
 
     <ImageView
@@ -32,16 +35,19 @@
         android:layout_margin="2dp"
         android:layout_rowWeight="1"
         app:srcCompat="@drawable/img3"
+        android:layout_height="120dp"
+        android:layout_width="100dp"
         />
 
     <ImageView
         android:id="@+id/ph05"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
         android:layout_columnWeight="1"
         android:layout_margin="2dp"
         android:layout_rowWeight="1"
         app:srcCompat="@drawable/img4"
+
         />
 
     <ImageView
@@ -50,6 +56,8 @@
         android:layout_margin="2dp"
         android:layout_rowWeight="1"
         app:srcCompat="@drawable/img8"
+        android:layout_height="120dp"
+        android:layout_width="100dp"
         />
 
     <ImageView
@@ -58,6 +66,8 @@
         android:layout_margin="2dp"
         android:layout_rowWeight="1"
         app:srcCompat="@drawable/img9"
+        android:layout_height="120dp"
+        android:layout_width="100dp"
         />
 
 

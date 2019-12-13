@@ -14,7 +14,7 @@ import  android.widget.Toast;
 import android.view.Gravity;
 
 
-
+import static android.widget.Toast.*;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -42,20 +42,16 @@ public class RegisterActivity extends AppCompatActivity {
 
                 final String name = emailEditText.getText().toString();
 
-                if (name  == " ")
+                if (emailEditText.getText().toString().isEmpty())
                 {
-                    Toast t = Toast.makeText(getApplicationContext(),
-                            "This a positioned toast message",
-                            Toast.LENGTH_LONG);
-                    t.setGravity(Gravity.BOTTOM | Gravity.LEFT, 0, 0);
-                    t.show();
+                   // Toast.makeText(this,"empty", LENGTH_SHORT).show();
                 }
                 final String email = emailEditText.getText().toString();
 
                     if (email == "") {
-                    Toast t = Toast.makeText(getApplicationContext(),
+                    Toast t = makeText(getApplicationContext(),
                             "This a positioned toast message",
-                            Toast.LENGTH_LONG);
+                            LENGTH_LONG);
                     t.setGravity(Gravity.BOTTOM | Gravity.LEFT, 0, 0);
                     t.show();
                 }
