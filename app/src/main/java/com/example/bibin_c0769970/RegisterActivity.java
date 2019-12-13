@@ -35,7 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         emailEditText = (EditText) findViewById(R.id.email);
         phoneEditText = (EditText) findViewById(R.id.phone);
 
-        findViewById(R.id.button).setOnClickListener(new OnClickListener() {
+        findViewById(R.id.button).setOnClickListener(new OnClickListener()   {
 
             @Override
             public void onClick(View arg0) {
