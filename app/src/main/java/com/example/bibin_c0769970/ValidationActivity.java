@@ -20,6 +20,14 @@ public class ValidationActivity extends AppCompatActivity {
             "img4","img5","img6","img7", "img8", "img9",
 
     };
+    public void changeSource(View view) {
+        ImageView imageView = (ImageView) view;
+        imageView.setImageResource(R.drawable.checked);
+        imageView.setBackgroundResource(R.drawable.img1);
+//        imageView.animate().alpha(0.5f);
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
