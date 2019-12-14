@@ -19,6 +19,7 @@ public class ValidationActivity extends AppCompatActivity {
     String name;
     String email;
     String phone;
+    Integer temp =0;
 
     int[] imageIcons = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4,R.drawable.img5,R.drawable.img6,R.drawable.img7,
             R.drawable.img8, R.drawable.img9};
@@ -29,7 +30,16 @@ public class ValidationActivity extends AppCompatActivity {
             R.drawable.img2, R.drawable.img1};
     String[] numbers1 = {
             "img3", "img8", "img3",
-            "img4","img5","img6","img7", "img2", "img1",
+            "img4","img5","img6","img7", "img2", "img1"};
+
+    int[] imageIcons3 = {R.drawable.img4, R.drawable.img6, R.drawable.img8, R.drawable.img1,R.drawable.img3,R.drawable.img2,R.drawable.img5,
+            R.drawable.img7, R.drawable.img9};
+    String[] numbers3 = {
+            "img4", "img6", "img8",
+            "img1","img3","img2","img5", "img7", "img9",
+
+
+
     };
     public void changeSource(View view) {
         ImageView imageView = (ImageView) view;
@@ -72,8 +82,17 @@ public class ValidationActivity extends AppCompatActivity {
     public  void refresh(View view)  {
 
 
-        final ImageAdaptor imageAdaptor = new ImageAdaptor(this, imageIcons1, numbers1);
-        gridView.setAdapter(imageAdaptor);
+        if(temp == 0) {
+            final ImageAdaptor imageAdaptor = new ImageAdaptor(this, imageIcons1, numbers1);
+            gridView.setAdapter(imageAdaptor);
+            temp = 1;
+        }
+       else if (temp == 1) {
+            final ImageAdaptor imageAdaptor = new ImageAdaptor(this, imageIcons3, numbers3);
+            gridView.setAdapter(imageAdaptor);
+             temp = 1;
+
+        }
 
     }
 
