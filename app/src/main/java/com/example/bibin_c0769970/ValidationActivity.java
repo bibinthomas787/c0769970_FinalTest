@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 public class ValidationActivity extends AppCompatActivity {
     GridView gridView;
     public String someVariable;
+    CheckBox fee_checkbox;
 
     int[] imageIcons = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4,R.drawable.img5,R.drawable.img6,R.drawable.img7,
             R.drawable.img8, R.drawable.img9};
@@ -30,6 +32,32 @@ public class ValidationActivity extends AppCompatActivity {
         //imageView.setBackgroundResource(R.drawable.img1 );
 //        imageView.animate().alpha(0.5f);
     }
+    public  void setup(String test)  {
+
+
+
+
+    }
+
+    public void submit(View view){
+
+        fee_checkbox = (CheckBox)findViewById(R.id.checkBox2);
+        if(fee_checkbox.isChecked())
+        {
+
+
+        }
+        else
+        {
+            Toast.makeText(ValidationActivity.this, "Please fill all the fields! " , Toast.LENGTH_SHORT).show();
+
+
+        }
+
+
+    }
+
+
 
 
     public  void refresh(View view)  {
@@ -37,6 +65,7 @@ public class ValidationActivity extends AppCompatActivity {
 
         final ImageAdaptor imageAdaptor = new ImageAdaptor(this, imageIcons1, numbers1);
         gridView.setAdapter(imageAdaptor);
+
     }
 
 

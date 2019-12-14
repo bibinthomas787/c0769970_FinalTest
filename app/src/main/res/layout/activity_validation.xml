@@ -42,6 +42,7 @@
         android:layout_marginLeft="112dp"
         android:layout_marginBottom="32dp"
         android:background="#FD00967F"
+        android:onClick="submit"
         android:text="Verify"
         android:textColorHint="#00F1EEEE"
         app:layout_constraintBottom_toBottomOf="parent"
