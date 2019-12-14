@@ -13,11 +13,11 @@ public class ValidationActivity extends AppCompatActivity {
     GridView gridView;
     public String someVariable;
 
-    int[] imageIcons = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4,
+    int[] imageIcons = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4,R.drawable.img5,R.drawable.img6,R.drawable.img7,
             R.drawable.img8, R.drawable.img9};
     String[] numbers = {
             "img1", "img2", "img3",
-            "img4", "img8", "img9",
+            "img4","img5","img6","img7", "img8", "img9",
 
     };
 
