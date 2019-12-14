@@ -8,12 +8,17 @@ import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class ValidationActivity extends AppCompatActivity {
     GridView gridView;
     public String someVariable;
+    ListView listData;
     CheckBox fee_checkbox;
+    String name;
+    String email;
+    String phone;
 
     int[] imageIcons = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4,R.drawable.img5,R.drawable.img6,R.drawable.img7,
             R.drawable.img8, R.drawable.img9};
@@ -45,10 +50,14 @@ public class ValidationActivity extends AppCompatActivity {
         if(fee_checkbox.isChecked())
         {
 
+            //  final UserData userData = new UserData(this, name,email,phone);
+            //  listData.setAdapter(userData);
 
         }
         else
         {
+
+
             Toast.makeText(ValidationActivity.this, "Please fill all the fields! " , Toast.LENGTH_SHORT).show();
 
 
