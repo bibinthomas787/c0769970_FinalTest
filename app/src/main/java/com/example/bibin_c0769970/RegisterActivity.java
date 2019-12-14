@@ -48,10 +48,19 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
 
-                    else   {  
+                    else   {
+
+                    EditText name1 = (EditText) findViewById(R.id.name);
+                    EditText email1 = (EditText) findViewById(R.id.email);
+                    EditText phone1 = (EditText) findViewById(R.id.phone);
+
+
 
                         Intent activity3Intent = new Intent(getApplicationContext(), ValidationActivity.class);
                         startActivity(activity3Intent);
+                    activity3Intent.putExtra("name", name1.getText().toString());
+                    activity3Intent.putExtra("email", email1.getText().toString());
+                    activity3Intent.putExtra("phone", phone1.getText().toString());
 
 
                     }
