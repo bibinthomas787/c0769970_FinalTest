@@ -12,7 +12,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.content.Intent;
-
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.app.Activity;
 public class ValidationActivity extends AppCompatActivity {
     GridView gridView;
     public String someVariable;
@@ -67,6 +69,24 @@ public class ValidationActivity extends AppCompatActivity {
             String name = intent.getStringExtra("name");
             String email = intent.getStringExtra("email");
             String phone = intent.getStringExtra("phone");
+
+            AlertDialog.Builder dialog=new AlertDialog.Builder(this);
+            dialog.setMessage("Verified !");
+
+            dialog.setPositiveButton("Ok",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog,
+                                            int which) {
+
+                            Intent activity3Intent = new Intent(getApplicationContext(), MainActivity.class);
+                            startActivity(activity3Intent);
+
+                        }
+                    });
+
+            AlertDialog alertDialog=dialog.create();
+            alertDialog.show();
+
 
 
         }
