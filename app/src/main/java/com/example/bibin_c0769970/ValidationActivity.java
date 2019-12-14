@@ -32,7 +32,7 @@ public class ValidationActivity extends AppCompatActivity {
     }
 
 
-    public  void refresh(View view) {
+    public  void refresh(View view)  {
 
 
         final ImageAdaptor imageAdaptor = new ImageAdaptor(this, imageIcons1, numbers1);
