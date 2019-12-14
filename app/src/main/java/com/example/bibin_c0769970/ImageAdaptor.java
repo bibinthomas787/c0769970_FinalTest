@@ -41,7 +41,7 @@ public class ImageAdaptor extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.cell_item, null);
         ImageView imageView = convertView.findViewById(R.id.image_view);
         //TextView textView = convertView.findViewById(R.id.icon_text);
-        imageView.setImageResource(imageIcons[position]);
+        imageView.setBackgroundResource(imageIcons[position]);
        // textView.setText(numbers[position]);
         return convertView;
     }

@@ -23,7 +23,7 @@ public class ValidationActivity extends AppCompatActivity {
     public void changeSource(View view) {
         ImageView imageView = (ImageView) view;
         imageView.setImageResource(R.drawable.checked);
-        imageView.setBackgroundResource(R.drawable.img1);
+        //imageView.setBackgroundResource(R.drawable.img1 );
 //        imageView.animate().alpha(0.5f);
     }
 
