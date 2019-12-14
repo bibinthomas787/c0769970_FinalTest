@@ -17,8 +17,12 @@ public class ValidationActivity extends AppCompatActivity {
             R.drawable.img8, R.drawable.img9};
     String[] numbers = {
             "img1", "img2", "img3",
-            "img4","img5","img6","img7", "img8", "img9",
-
+            "img4","img5","img6","img7", "img8", "img9"};
+    int[] imageIcons1 = {R.drawable.img3, R.drawable.img8, R.drawable.img3, R.drawable.img4,R.drawable.img5,R.drawable.img6,R.drawable.img7,
+            R.drawable.img2, R.drawable.img1};
+    String[] numbers1 = {
+            "img3", "img8", "img3",
+            "img4","img5","img6","img7", "img2", "img1",
     };
     public void changeSource(View view) {
         ImageView imageView = (ImageView) view;
@@ -27,6 +31,13 @@ public class ValidationActivity extends AppCompatActivity {
 //        imageView.animate().alpha(0.5f);
     }
 
+
+    public  void refresh(View view) {
+
+
+        final ImageAdaptor imageAdaptor = new ImageAdaptor(this, imageIcons1, numbers1);
+        gridView.setAdapter(imageAdaptor);
+    }
 
 
     @Override
