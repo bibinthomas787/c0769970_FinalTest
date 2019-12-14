@@ -42,6 +42,9 @@ public class ValidationActivity extends AppCompatActivity {
 
                // imageView.setBackgroundResource(R.drawable.iconAdapter.getItem(position));
 
+
+
+
                  Toast.makeText(ValidationActivity.this, "You clicked on " + iconAdapter.getItem(position), Toast.LENGTH_SHORT).show();
             }
         });
