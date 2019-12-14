@@ -48,7 +48,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
 
-                    else {
+                    else   {  
 
                         Intent activity3Intent = new Intent(getApplicationContext(), ValidationActivity.class);
                         startActivity(activity3Intent);
