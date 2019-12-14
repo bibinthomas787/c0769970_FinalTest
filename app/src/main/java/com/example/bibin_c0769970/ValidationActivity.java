@@ -36,8 +36,8 @@ public class ValidationActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                ImageView imageView = (ImageView) view;
-                imageView.setImageResource(R.drawable.checked);
+                //ImageView imageView = (ImageView) view;
+               // imageView.setImageResource(R.drawable.checked);
 
 
                // imageView.setBackgroundResource(R.drawable.iconAdapter.getItem(position));
